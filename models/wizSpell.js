@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const wizSpellSchema = new Schema({
-  level: Number,
+  level: String,
   name: String,
   school: String,
   range: String,

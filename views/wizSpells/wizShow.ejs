@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= spell.name %></title>
+    <!-- <style>
+      textarea {
+        white-space: pre-wrap;
+      }
+    </style> -->
+</head>
+<body>
+  <nav></nav>
+  <header>
+    <h1><%= spell.name %></h1>
+    <h3>(<%= spell.school %>)</h3>
+  </header>  
+  <table>
+    <tr>
+      <td>
+        <b>Range:</b> <%= spell.range %>
+        <b>Components:</b> <%= spell.components %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Duration:</b> <%= spell.duration %>
+        <b>Casting Time:</b> <%= spell.casting %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Area of Effect:</b> <%= spell.aoe %>
+        <b>Saving Throw:</b> <%= spell.saving %>
+      </td>
+    </tr>
+  </table>
+  <p>
+    <%= spell.description %>
+  </p>
+  <footer>
+    <a href="/wizSpells/<%=spell._id%>/edit">Edit: <%= spell.name %></a>
+    <form action="/wizSpells/<%=spell._id%>?_method=DELETE" method="POST">
+      <input type="submit" value="Remove <%= spell.name %> from Spellbook">
+    </form>
+  </footer>
+</body>
+</html>
+<%  %>
+<%=  %>
+<%-  %>

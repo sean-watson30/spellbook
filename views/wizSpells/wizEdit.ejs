@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit: <%= spell.name %></title>
+</head>
+<body>
+  <main>
+    <h1>Edit: <%= spell.name %></h1>
+    <form action="/wizSpells/<%=spell._id%>?_method=PUT" method="POST">
+      <input type="text" name="level" value="<%=spell.level%>" placeholder="Spell Level"><br>
+      <input type="text" name="name" value="<%=spell.name%>" placeholder="Spell Name"><br>
+      <input type="text" name="school" value="<%=spell.school%>" placeholder="Spell School"><br>
+      <input type="text" name="range" value="<%=spell.range%>" placeholder="Spell Range"><br>
+      <input type="text" name="duration" value="<%=spell.duration%>" placeholder="Spell Duration"><br>
+      <input type="text" name="aoe" value="<%=spell.aoe%>" placeholder="Area of Effect"><br>
+      <input type="text" name="components" value="<%=spell.components%>" placeholder="Casting Components"><br>
+      <input type="text" name="casting" value="<%=spell.casting%>" placeholder="Casting Time"><br>
+      <input type="text" name="saving" value="<%=spell.saving%>" placeholder="Saving Throw"><br>
+      <textarea wrap="hard" name="description" cols="30" rows="10" ><%=spell.description%></textarea><br>
+      <input type="submit" value="Update Spell">
+    </form>
+  </main>
+</body>
+</html>

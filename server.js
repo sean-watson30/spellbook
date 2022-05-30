@@ -34,8 +34,8 @@ app.use('/wizSpells', wizSpellsController);
 //              ROUTES
 // =======================================
 app.get('/', (req, res) => {
-  res.send('working');
-  // res.render('index.ejs');
+  // res.send('working');
+  res.render('index.ejs');
 })
 
 // =======================================
