@@ -39,8 +39,8 @@
     <%= spell.description %>
   </p>
   <footer>
-    <a href="/wizSpells/<%=spell._id%>/edit">Edit: <%= spell.name %></a>
-    <form action="/wizSpells/<%=spell._id%>?_method=DELETE" method="POST">
+    <a href="/wiz2Spells/<%=spell._id%>/edit">Edit: <%= spell.name %></a>
+    <form action="/wiz2Spells/<%=spell._id%>?_method=DELETE" method="POST">
       <input type="submit" value="Remove <%= spell.name %> from Spellbook">
     </form>
   </footer>

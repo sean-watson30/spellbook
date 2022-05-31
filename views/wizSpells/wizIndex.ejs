@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include('../partials/head.ejs') %>
   <title>Wizard Spells</title>
 </head>
 <body>
@@ -15,7 +13,13 @@
     <ul>
       <% for (let i = 0; i < spells.length; i++) { %>
         <li>
-          <a href="/wizSpells/<%=spells[i]._id%>"><%=spells[i].name%></a>
+        <!-- <div class="product">
+          <div class="effect-1"></div>
+          <div class="effect-2"></div>
+          <div class="content"> -->
+            <a class="glow" href="/wizSpells/<%=spells[i]._id%>"><%=spells[i].name%></a>
+          <!-- </div>
+        </div> -->
         </li>
       <% } %>
     </ul>

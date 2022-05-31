@@ -7,7 +7,7 @@
 <body>
   <main>
     <h1>Edit: <%= spell.name %></h1>
-    <form action="/wizSpells/<%=spell._id%>?_method=PUT" method="POST">
+    <form action="/wiz2Spells/<%=spell._id%>?_method=PUT" method="POST">
       <input type="text" name="level" value="<%=spell.level%>" placeholder="Spell Level"><br>
       <input type="text" name="name" value="<%=spell.name%>" placeholder="Spell Name"><br>
       <input type="text" name="school" value="<%=spell.school%>" placeholder="Spell School"><br>
