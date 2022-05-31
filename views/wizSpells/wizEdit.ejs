@@ -5,6 +5,9 @@
   <title>Edit: <%= spell.name %></title>
 </head>
 <body>
+  <nav>
+    <a href="/wizSpells">Wizard Spell Index</a>
+  </nav>
   <main>
     <h1>Edit: <%= spell.name %></h1>
     <form action="/wizSpells/<%=spell._id%>?_method=PUT" method="POST">

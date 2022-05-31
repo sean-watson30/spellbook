@@ -3,14 +3,11 @@
 <head>
   <%- include('../partials/head.ejs') %>
   <title><%= spell.name %></title>
-    <!-- <style>
-      textarea {
-        white-space: pre-wrap;
-      }
-    </style> -->
 </head>
 <body>
-  <nav></nav>
+  <nav>
+    <a href="/wizSpells">Wizard Spell Index</a>
+  </nav>
   <header>
     <h1><%= spell.name %></h1>
     <h3>(<%= spell.school %>)</h3>

@@ -8,6 +8,12 @@ const wiz2SpellsController = require('./controllers/wiz2Spells.js');
 const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+// const jsdom = require('jsdom');
+// const { JSDOM } = jsdom;
+// const { window } = new JSDOM();
+// const { document } = (new JSDOM('')).window;
+// global.document = document;
+// const $ = require('jquery')(window);
 const PORT = 3000;
 
 // =======================================

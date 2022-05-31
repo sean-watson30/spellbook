@@ -21,20 +21,15 @@
     <a href="/wizSpells/wiz9">Level 9</a>
   </aside>
   <main>
-    <h2>Select Your Level</h2>
     <ul>
-      <% //const displaySpells = () => { %>
-        <% //for (let i = 0; i < spells.length; i++) { %>
-          <div>
-            <% //if (spells[i].level == 1) { %>
-              <!-- <a class="glow" href="/wizSpells/<%=//spells[i]._id%>"><%=//spells[i].name%></a> -->
-              <% //} else { %>
-                <% //} %>  
-              </div>
-              <%// } %>
-              <% //} %>
-      <% //const lvl1 = document.getElementsByTagName("lvl1") %>
-      <% //lvl1.addEventListener('click', displaySpells) %>
+      <% for (let i = 0; i < spells.length; i++) { %>
+      <div>
+        <% if (spells[i].level == 7) { %>
+          <a class="glow" href="/wizSpells/<%=spells[i]._id%>"><%=spells[i].name%></a>
+        <% } else { %>
+        <% } %>  
+      </div>
+      <% } %>
     </ul>
   </main>
 </body>

@@ -11,6 +11,10 @@ a {
   padding: 1%;
 }
 
+p {
+  white-space: pre-wrap;
+}
+
 /* .product {
   flex: auto;
   margin: 0 1vw calc(1vw + 50px) 1vw;

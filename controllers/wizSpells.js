@@ -3,6 +3,12 @@
 // =======================================
 const router = require('express').Router();
 const WizSpell = require('../models/wizSpell.js');
+// const jsdom = require('jsdom');
+// const { JSDOM } = jsdom;
+// const { window } = new JSDOM();
+// const { document } = (new JSDOM('')).window;
+// global.document = document;
+// const $ = require('jquery')(window);
 
 // =======================================
 //              MIDDLEWARE
@@ -17,6 +23,69 @@ const WizSpell = require('../models/wizSpell.js');
 router.get('/', (req, res) => {
   WizSpell.find({}, (err, foundSpells) => {
     res.render('wizSpells/wizIndex.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz1', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex1.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz2', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex2.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz3', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex3.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz4', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex4.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz5', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex5.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz6', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex6.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz7', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex7.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz8', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex8.ejs', {
+      spells: foundSpells
+    })
+  })
+})
+router.get('/wiz9', (req, res) => {
+  WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex9.ejs', {
       spells: foundSpells
     })
   })
