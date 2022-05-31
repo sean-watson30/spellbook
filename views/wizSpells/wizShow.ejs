@@ -5,42 +5,40 @@
   <title><%= spell.name %></title>
 </head>
 <body>
-  <nav>
-    <a href="/wizSpells">Wizard Spell Index</a>
-  </nav>
-  <header>
-    <h1><%= spell.name %></h1>
-    <h3>(<%= spell.school %>)</h3>
-  </header>  
-  <table>
-    <tr>
-      <td>
-        <b>Range:</b> <%= spell.range %>
-        <b>Components:</b> <%= spell.components %>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>Duration:</b> <%= spell.duration %>
-        <b>Casting Time:</b> <%= spell.casting %>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>Area of Effect:</b> <%= spell.aoe %>
-        <b>Saving Throw:</b> <%= spell.saving %>
-      </td>
-    </tr>
-  </table>
-  <p>
-    <%= spell.description %>
-  </p>
-  <footer>
-    <a href="/wizSpells/<%=spell._id%>/edit">Edit: <%= spell.name %></a>
-    <form action="/wizSpells/<%=spell._id%>?_method=DELETE" method="POST">
-      <input type="submit" value="Remove <%= spell.name %> from Spellbook">
-    </form>
-  </footer>
+  <!-- <header>
+  </header>   -->
+  <div>
+    <aside>
+      <%- include('../partials/wizAside.ejs') %>
+    </aside>
+    <main>
+      <h1><%= spell.name %></h1>
+      <h3>(<%= spell.school %>)</h3>
+      <table>
+        <tr>
+          <td><b>Range:</b> <%= spell.range %></td>
+          <td><b>Components:</b> <%= spell.components %></td>
+        </tr>
+        <tr>
+          <td><b>Duration:</b> <%= spell.duration %></td>
+          <td><b>Casting Time:</b> <%= spell.casting %></td>
+        </tr>
+        <tr>
+          <td><b>Area of Effect:</b> <%= spell.aoe %></td>
+          <td><b>Saving Throw:</b> <%= spell.saving %></td>  
+        </tr>
+      </table>
+      <p>
+        <%= spell.description %>
+      </p>
+      <footer>
+        <button onclick="location.href='/wizSpells/<%=spell._id%>/edit'" type="button">Edit: <%= spell.name %></button>
+        <form action="/wizSpells/<%=spell._id%>?_method=DELETE" method="POST">
+          <input type="submit" value="Remove <%= spell.name %> from Spellbook">
+        </form>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
 <%  %>

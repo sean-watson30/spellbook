@@ -5,32 +5,26 @@
   <title>Wizard Spells</title>
 </head>
 <body>
-  <nav>
-    <h1>Wizard Spells</h1>
-    <a href="/wizSpells/new">Transcribe a New Spell</a>
-  </nav>
-  <aside>
-    <a href="/wizSpells/wiz1">Level 1</a>
-    <a href="/wizSpells/wiz2">Level 2</a>
-    <a href="/wizSpells/wiz3">Level 3</a>
-    <a href="/wizSpells/wiz4">Level 4</a>
-    <a href="/wizSpells/wiz5">Level 5</a>
-    <a href="/wizSpells/wiz6">Level 6</a>
-    <a href="/wizSpells/wiz7">Level 7</a>
-    <a href="/wizSpells/wiz8">Level 8</a>
-    <a href="/wizSpells/wiz9">Level 9</a>
-  </aside>
-  <main>
-    <ul>
-      <% for (let i = 0; i < spells.length; i++) { %>
-      <div>
-        <% if (spells[i].level == 9) { %>
-          <a class="glow" href="/wizSpells/<%=spells[i]._id%>"><%=spells[i].name%></a>
-        <% } else { %>
-        <% } %>  
-      </div>
-      <% } %>
-    </ul>
-  </main>
+  <div>
+    <aside>
+      <%- include('../partials/wizAside.ejs') %>
+    </aside>
+    <main>
+      <nav>
+        <h1>Wizard Spells (9th Level)</h1>
+        <a href="/wizSpells/new">Transcribe a New Spell</a>
+      </nav>
+      <ul>
+        <% for (let i = 0; i < spells.length; i++) { %>
+        <div>
+          <% if (spells[i].level == 9) { %>
+            <a class="glow" href="/wizSpells/<%=spells[i]._id%>"><%=spells[i].name%></a>
+          <% } else { %>
+          <% } %>  
+        </div>
+        <% } %>
+      </ul>
+    </main>
+  </div>
 </body>
 </html>
