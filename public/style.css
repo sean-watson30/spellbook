@@ -7,6 +7,11 @@ body {
   font-family: 'Alegreya SC', serif;
   display: flex;
   flex-direction: column;
+  /* background-image: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  background-image: url('https://images.pexels.com/photos/7978845/pexels-photo-7978845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 div {
@@ -41,13 +46,14 @@ p {
   white-space: pre-wrap;
 }
 
-/* .glow {
-  font-size: 40px;
+.glow {
+  /* font-size: 20px; */
+  /* color: #fff; */
   color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  /* text-align: center; */
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
@@ -58,4 +64,4 @@ p {
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-} */
+}
