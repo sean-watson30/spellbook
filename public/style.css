@@ -1,8 +1,12 @@
 :root {
   --page: rgb(183, 180, 144);
   --text: white;
-  --glow1: #e6c400;
-  --glow2: #fffc4d;
+  --glow1: #e6a500;
+  --glow2: #ffd54d;
+  /* yellow */
+  /* --glow1: #e6c400;
+  --glow2: #fffc4d; */
+  /* pink */
   /* --glow1: #e60073;
   --glow2: #ff4da6; */
 }
@@ -13,12 +17,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  /* background-image: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.pexels.com/photos/7978845/pexels-photo-7978845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  /* background-image: url('https://images.unsplash.com/photo-1508169351866-777fc0047ac5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); */
   background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-repeat: no-repeat;
+  /* background-position: left; */
   color: var(--text);
 }
 
@@ -29,10 +31,9 @@ div {
 
 aside {
   width: 15%;
-  padding: 0% 4% 0% 4%;
+  padding: 2% 2% 10% 2%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: rgb(129, 9, 9);
   border-bottom-left-radius: 50px;
@@ -44,10 +45,17 @@ aside {
 }
 
 main {
-  width: 85%;
-  padding: 4%;
-  margin: 4% 15% 4% 10%;
+  width: 70%;
+  padding: 2%;
+  margin: 4% 10% 4% 10%;
   color: var(--text);
+}
+
+#mainPage {
+  margin: 5% 20% 5% 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer {
