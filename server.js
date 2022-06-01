@@ -14,7 +14,7 @@ const methodOverride = require('method-override');
 // const { document } = (new JSDOM('')).window;
 // global.document = document;
 // const $ = require('jquery')(window);
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // =======================================
 //              DATABASE CONFIG
