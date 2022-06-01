@@ -11,15 +11,23 @@
   --glow2: #ff4da6; */
 }
 
+@font-face {
+  font-family: SidheNoble;
+  src: url(/fonts/SidheNoble-m2dj.ttf);
+}
+
 body {
   background-color: var(--page);
-  font-family: 'Alegreya SC', serif;
+  font-family: SidheNoble;
+  font-size: 20px;
+  /* font-family: 'Alegreya SC', serif; */
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url(/images/parchment.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   /* background-position: left; */
   color: var(--text);
 }
@@ -56,6 +64,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: 30px;
 }
 
 footer {
@@ -75,10 +84,12 @@ a:active {text-decoration: none;}
 
 .spellDesc {
   color: var(--text);
+  padding-inline-end: 15px;
 }
 
 p {
   white-space: pre-wrap;
+  /* font-family: 'Alegreya SC', serif; */
 }
 
 .glow:hover {
