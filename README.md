@@ -20,3 +20,4 @@ This app is designed for Dungeons & Dragons players and Dungeon masters alike! I
 * 
 
 ## Thank You's and Acknowledgements
+Thank you to W3 Docs for the tutorial on CSS glow effects!

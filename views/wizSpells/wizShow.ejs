@@ -12,23 +12,23 @@
       <%- include('../partials/wizAside.ejs') %>
     </aside>
     <main>
-      <h1 class="glow"><%= spell.name %></h1>
-      <h3>(<%= spell.school %>)</h3>
+      <h1 class="glowConst"><%= spell.name %></h1>
+      <h3 class="spellDesc">(<%= spell.school %>)</h3>
       <table>
         <tr>
-          <td><b>Range:</b> <%= spell.range %></td>
-          <td><b>Components:</b> <%= spell.components %></td>
+          <td class="spellDesc"><b>Range:</b> <%= spell.range %></td>
+          <td class="spellDesc"><b>Components:</b> <%= spell.components %></td>
         </tr>
         <tr>
-          <td><b>Duration:</b> <%= spell.duration %></td>
-          <td><b>Casting Time:</b> <%= spell.casting %></td>
+          <td class="spellDesc"><b>Duration:</b> <%= spell.duration %></td>
+          <td class="spellDesc"><b>Casting Time:</b> <%= spell.casting %></td>
         </tr>
         <tr>
-          <td><b>Area of Effect:</b> <%= spell.aoe %></td>
-          <td><b>Saving Throw:</b> <%= spell.saving %></td>  
+          <td class="spellDesc"><b>Area of Effect:</b> <%= spell.aoe %></td>
+          <td class="spellDesc"><b>Saving Throw:</b> <%= spell.saving %></td>  
         </tr>
       </table>
-      <p>
+      <p class="spellDesc">
         <%= spell.description %>
       </p>
       <footer>

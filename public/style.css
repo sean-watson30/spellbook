@@ -1,5 +1,10 @@
 :root {
   --page: rgb(183, 180, 144);
+  --text: white;
+  --glow1: #e6c400;
+  --glow2: #fffc4d;
+  /* --glow1: #e60073;
+  --glow2: #ff4da6; */
 }
 
 body {
@@ -7,11 +12,14 @@ body {
   font-family: 'Alegreya SC', serif;
   display: flex;
   flex-direction: column;
+  margin: 0;
   /* background-image: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  background-image: url('https://images.pexels.com/photos/7978845/pexels-photo-7978845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  /* background-image: url('https://images.pexels.com/photos/7978845/pexels-photo-7978845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  /* background-image: url('https://images.unsplash.com/photo-1508169351866-777fc0047ac5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); */
+  background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--text);
 }
 
 div {
@@ -21,16 +29,25 @@ div {
 
 aside {
   width: 15%;
-  padding: 20% 4% 20% 4%;
+  padding: 0% 4% 0% 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(129, 9, 9);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-style: double;
+  border-color: goldenrod;
+  margin: 0% 4% 0% 4%;
+  color: var(--text);
 }
 
 main {
   width: 85%;
   padding: 4%;
+  margin: 4% 15% 4% 10%;
+  color: var(--text);
 }
 
 footer {
@@ -40,17 +57,25 @@ footer {
 
 a {
   padding: 1%;
+  color: var(--text);
+}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+.spellDesc {
+  color: var(--text);
 }
 
 p {
   white-space: pre-wrap;
 }
 
-.glow {
-  /* font-size: 20px; */
-  /* color: #fff; */
-  color: #fff;
-  /* text-align: center; */
+.glow:hover {
+  color: var(--text);
+  text-align: left;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
@@ -58,10 +83,29 @@ p {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow1), 0 0 25px var(--glow1), 0 0 250px var(--glow1), 0 0 300px var(--glow1), 0 0 40px var(--glow1);
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 10px var(--text), 0 0 20px var(--glow2), 0 0 20px var(--glow2), 0 0 30px var(--glow2), 0 0 40px var(--glow2), 0 0 50px var(--glow2), 0 0 60px var(--glow2);
   }
 }
+
+.glowConst {
+  color: var(--text);
+  text-align: left;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowConst {
+  from {
+    text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow1), 0 0 25px var(--glow1), 0 0 250px var(--glow1), 0 0 300px var(--glow1), 0 0 40px var(--glow1);
+  }
+  
+  to {
+    text-shadow: 0 0 10px var(--text), 0 0 20px var(--glow2), 0 0 20px var(--glow2), 0 0 30px var(--glow2), 0 0 40px var(--glow2), 0 0 50px var(--glow2), 0 0 60px var(--glow2);
+  }
+}
+

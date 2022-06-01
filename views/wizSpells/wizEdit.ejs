@@ -11,7 +11,7 @@
     </aside>
     <main>
       <nav>
-        <h1>Edit: <%= spell.name %></h1>
+        <h1 class="glowConst">Edit: <%= spell.name %></h1>
       </nav>
       <form action="/wizSpells/<%=spell._id%>?_method=PUT" method="POST">
         <input type="text" name="level" value="<%=spell.level%>" placeholder="Spell Level"><br>
