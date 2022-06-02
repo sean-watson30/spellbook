@@ -21,11 +21,12 @@ const WizSpell = require('../models/wizSpell.js');
 
 // INDEX
 router.get('/', (req, res) => {
-  WizSpell.find({}, (err, foundSpells) => {
-    res.render('wizSpells/wizIndex.ejs', {
-      spells: foundSpells
-    })
-  })
+  // WizSpell.find({}, (err, foundSpells) => {
+    res.render('wizSpells/wizIndex.ejs', //{
+    //   spells: foundSpells
+    // })
+  //}
+  )
 })
 router.get('/wiz1', (req, res) => {
   WizSpell.find({}, (err, foundSpells) => {

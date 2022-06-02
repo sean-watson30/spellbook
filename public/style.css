@@ -3,12 +3,10 @@
   --text: white;
   --glow1: #e6a500;
   --glow2: #ffd54d;
-  /* yellow */
-  /* --glow1: #e6c400;
-  --glow2: #fffc4d; */
-  /* pink */
-  /* --glow1: #e60073;
-  --glow2: #ff4da6; */
+  --glow3: #008ae6;
+  --glow4: #4d59ff;
+  --glow5: #e66b00;
+  --glow6: #b02222;
 }
 
 @font-face {
@@ -50,6 +48,10 @@ aside {
   border-color: goldenrod;
   margin: 0% 4% 0% 4%;
   color: var(--text);
+}
+
+#priAside {
+  background-color: rgb(49, 9, 106);
 }
 
 main {
@@ -109,24 +111,6 @@ p {
   /* font-family: 'Alegreya SC', serif; */
 }
 
-.glow:hover {
-  color: var(--text);
-  text-align: left;
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow1), 0 0 25px var(--glow1), 0 0 250px var(--glow1), 0 0 300px var(--glow1), 0 0 40px var(--glow1);
-  }
-  
-  to {
-    text-shadow: 0 0 10px var(--text), 0 0 20px var(--glow2), 0 0 20px var(--glow2), 0 0 30px var(--glow2), 0 0 40px var(--glow2), 0 0 50px var(--glow2), 0 0 60px var(--glow2);
-  }
-}
-
 .glowConst {
   color: var(--text);
   text-align: left;
@@ -134,7 +118,6 @@ p {
   -moz-animation: glowConst 1s ease-in-out infinite alternate;
   animation: glowConst 1s ease-in-out infinite alternate;
 }
-
 @-webkit-keyframes glowConst {
   from {
     text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow1), 0 0 25px var(--glow1), 0 0 250px var(--glow1), 0 0 300px var(--glow1), 0 0 40px var(--glow1);
@@ -145,3 +128,64 @@ p {
   }
 }
 
+.pGlow:hover {
+  color: var(--text);
+  text-align: left;
+  -webkit-animation: pGlow 2s ease-in-out infinite alternate;
+  -moz-animation: pGlow 2s ease-in-out infinite alternate;
+  animation: pGlow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes pGlow {
+  from {
+    text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow3), 0 0 25px var(--glow3), 0 0 250px var(--glow3), 0 0 300px var(--glow3), 0 0 40px var(--glow3);
+  }
+  to {
+    text-shadow: 0 0 10px var(--text), 0 0 20px var(--glow4), 0 0 20px var(--glow4), 0 0 30px var(--glow4), 0 0 40px var(--glow4), 0 0 50px var(--glow4), 0 0 60px var(--glow4);
+  }
+}
+.pGlowConst {
+  color: var(--text);
+  text-align: left;
+  -webkit-animation: pGlowConst 1s ease-in-out infinite alternate;
+  -moz-animation: pGlowConst 1s ease-in-out infinite alternate;
+  animation: pGlowConst 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes pGlowConst {
+  from {
+    text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow3), 0 0 25px var(--glow3), 0 0 250px var(--glow3), 0 0 300px var(--glow3), 0 0 40px var(--glow3);
+  }
+  to {
+    text-shadow: 0 0 10px var(--text), 0 0 20px var(--glow4), 0 0 20px var(--glow4), 0 0 30px var(--glow4), 0 0 40px var(--glow4), 0 0 50px var(--glow4), 0 0 60px var(--glow4);
+  }
+}
+
+.wGlow:hover {
+  color: var(--text);
+  text-align: left;
+  -webkit-animation: wGlow 2s ease-in-out infinite alternate;
+  -moz-animation: wGlow 2s ease-in-out infinite alternate;
+  animation: wGlow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes wGlow {
+  from {
+    text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow5), 0 0 25px var(--glow5), 0 0 250px var(--glow5), 0 0 300px var(--glow5), 0 0 40px var(--glow5);
+  }
+  to {
+    text-shadow: 0 0 10px var(--text), 0 0 20px var(--glow6), 0 0 20px var(--glow6), 0 0 30px var(--glow6), 0 0 40px var(--glow6), 0 0 50px var(--glow6), 0 0 60px var(--glow6);
+  }
+}
+.wGlowConst {
+  color: var(--text);
+  text-align: left;
+  -webkit-animation: wGlowConst 1s ease-in-out infinite alternate;
+  -moz-animation: wGlowConst 1s ease-in-out infinite alternate;
+  animation: wGlowConst 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes wGlowConst {
+  from {
+    text-shadow: 0 0 5px var(--text), 0 0 15px var(--text), 0 0 10px var(--glow5), 0 0 25px var(--glow5), 0 0 250px var(--glow5), 0 0 300px var(--glow5), 0 0 40px var(--glow5);
+  }
+  to {
+    text-shadow: 0 0 10px var(--text), 0 0 20px var(--glow6), 0 0 20px var(--glow6), 0 0 30px var(--glow6), 0 0 40px var(--glow6), 0 0 50px var(--glow6), 0 0 60px var(--glow6);
+  }
+}

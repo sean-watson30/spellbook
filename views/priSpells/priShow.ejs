@@ -8,12 +8,12 @@
   <!-- <header>
   </header>   -->
   <div>
-    <aside>
-      <%- include('../partials/wizAside.ejs') %>
+    <aside id="priAside">
+      <%- include('../partials/priAside.ejs') %>
     </aside>
     <main>
-      <h1 class="wGlowConst"><%= spell.name %></h1>
-      <h3 class="spellDesc">(<%= spell.school %>)</h3>
+      <h1 class="pGlowConst"><%= spell.name %></h1>
+      <h3 class="spellDesc">(<%= spell.sphere %>)</h3>
       <table>
         <tr>
           <td class="spellDesc"><b>Range:</b> <%= spell.range %></td>
@@ -32,8 +32,8 @@
         <%= spell.description %>
       </p>
       <footer>
-        <button onclick="location.href='/wizSpells/<%=spell._id%>/edit'" type="button">Edit: <%= spell.name %></button>
-        <form action="/wizSpells/<%=spell._id%>?_method=DELETE" method="POST">
+        <button onclick="location.href='/priSpells/<%=spell._id%>/edit'" type="button">Edit: <%= spell.name %></button>
+        <form action="/priSpells/<%=spell._id%>?_method=DELETE" method="POST">
           <input type="submit" value="Remove <%= spell.name %> from Spellbook">
         </form>
       </footer>

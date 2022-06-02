@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
   <%- include('../partials/head.ejs') %>
-  <title>Wizard Spells</title>
+  <title>Priest Spells</title>
 </head>
 <body>
   <div>
-    <aside>
-      <%- include('../partials/wizAside.ejs') %>
+    <aside id="priAside">
+      <%- include('../partials/priAside.ejs') %>
     </aside>
     <main>
       <nav>
-        <h1 class="wGlowConst">Wizard Spells (1st Level)</h1>
-        <a class="wGlow" href="/wizSpells/new">Transcribe a New Spell</a>
+        <h1 class="pGlowConst">Priest Spells (1st Level)</h1>
+        <a class="pGlow" href="/priSpells/new">Meditate on a New Spell</a>
       </nav>
       <ul>
         <% for (let i = 0; i < spells.length; i++) { %>
         <div>
           <% if (spells[i].level == 1) { %>
-            <a class="wGlow" href="/wizSpells/<%=spells[i]._id%>"><%=spells[i].name%></a>
+            <a class="pGlow" href="/priSpells/<%=spells[i]._id%>"><%=spells[i].name%></a>
           <% } else { %>
           <% } %>  
         </div>

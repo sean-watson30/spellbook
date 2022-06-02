@@ -6,22 +6,22 @@
 </head>
 <body>
   <div>
-    <aside>
-      <%- include('../partials/wizAside.ejs') %>
+    <aside id="priAside">
+      <%- include('../partials/priAside.ejs') %>
     </aside>
     <main>
       <nav>
-        <h1 class="wGlowConst">Edit: <%= spell.name %></h1>
+        <h1 class="pGlowConst">Edit: <%= spell.name %></h1>
       </nav>
-      <form action="/wizSpells/<%=spell._id%>?_method=PUT" method="POST">
+      <form action="/priSpells/<%=spell._id%>?_method=PUT" method="POST">
         <label for="spellLvl">Level</label><br>
         <input type="text" name="level" value="<%=spell.level%>" placeholder="Spell Level" id="spellLvl"><br>
 
         <label for="spellName">Spell Name</label><br>
         <input type="text" name="name" value="<%=spell.name%>" placeholder="Spell Name" id="spellName"><br>
 
-        <label for="school">School</label><br>
-        <input type="text" name="school" value="<%=spell.school%>" placeholder="Spell School" id="school"><br>
+        <label for="sphere">Spell Sphere</label><br>
+        <input type="text" name="sphere" value="<%=spell.sphere%>" placeholder="Spell Sphere" id="sphere"><br>
 
         <label for="range">Range</label><br>
         <input type="text" name="range" value="<%=spell.range%>" placeholder="Spell Range" id="range"><br>

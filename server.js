@@ -4,7 +4,7 @@
 require('dotenv').config();
 const express = require('express');
 const wizSpellsController = require('./controllers/wizSpells.js');
-const wiz2SpellsController = require('./controllers/wiz2Spells.js');
+const priSpellsController = require('./controllers/priSpells.js');
 const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
@@ -37,7 +37,7 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use('/wizSpells', wizSpellsController);
-app.use('/wiz2Spells', wiz2SpellsController);
+app.use('/priSpells', priSpellsController);
 
 // =======================================
 //              ROUTES

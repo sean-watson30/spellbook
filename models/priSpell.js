@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const wiz2SpellSchema = new Schema({
+const priSpellSchema = new Schema({
   level: String,
   name: String,
-  school: String,
+  sphere: String,
   range: String,
   duration: String,
   aoe: String,
@@ -16,4 +16,4 @@ const wiz2SpellSchema = new Schema({
   description: String
 })
 
-module.exports = mongoose.model('Wiz2Spell', wiz2SpellSchema);
+module.exports = mongoose.model('PriSpell', priSpellSchema);

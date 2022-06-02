@@ -2,31 +2,26 @@
 <html lang="en">
   <head>
     <%- include('../partials/head.ejs') %>
-    <!-- <style>
-      textarea {
-        white-space: pre-wrap;
-      }
-    </style> -->
-    <title>Transcribe a New Spell</title>
+    <title>Meditate on a New Spell</title>
   </head>
   <body>
     <div>
-      <aside>
-        <%- include('../partials/wizAside.ejs') %>
+      <aside id="priAside">
+        <%- include('../partials/priAside.ejs') %>
       </aside>
       <main>
         <header>
-          <h1 class="wGlowConst">Transcribe a New Spell</h1>
+          <h1 class="pGlowConst">Meditate on a New Spell</h1>
         </header>
-        <form action="/wizSpells" method="POST">
+        <form action="/priSpells" method="POST">
           <label for="spellLvl">Level</label><br>
           <input type="text" name="level" placeholder="Spell Level" id="spellLvl"><br>
 
           <label for="spellName">Spell Name</label><br>
           <input type="text" name="name" placeholder="Spell Name" id="spellName"><br>
 
-          <label for="school">School</label><br>
-          <input type="text" name="school" placeholder="Spell School" id="school"><br>
+          <label for="sphere">Spell Sphere</label><br>
+          <input type="text" name="sphere" placeholder="Spell Sphere" id="sphere"><br>
 
           <label for="range">Range</label><br>
           <input type="text" name="range" placeholder="Spell Range" id="range"><br>
