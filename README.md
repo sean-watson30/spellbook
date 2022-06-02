@@ -4,9 +4,13 @@ This app is designed for Dungeons & Dragons players and Dungeon masters alike! I
 
 ## Technologies Used
 
-* NodeJS
-* MongoDB
+* NodeJS                    
+* Express
+* MongoDB and Mongoose      
 * CSS3
+* HTML5                     
+* JavaScript
+* EJS
 
 ## Screnshots
 
@@ -17,7 +21,7 @@ This app is designed for Dungeons & Dragons players and Dungeon masters alike! I
 
 ## Future Enhancements
 
-* 
+* In the future, I'd like to add in some authentication/authorization features, so that only the Dungeon master/Game Master can made edits and remove spells, while players can simply view the spell details and create new ones.
 
 ## Thank You's and Acknowledgements
 Thank you to W3 Docs for the tutorial on CSS glow effects!

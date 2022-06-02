@@ -1,5 +1,5 @@
 :root {
-  --page: rgb(183, 180, 144);
+  --page: rgba(186, 158, 55, 0.141);
   --text: white;
   --glow1: #e6a500;
   --glow2: #ffd54d;
@@ -82,6 +82,23 @@ a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
+input, textarea {
+  width: 80%;
+  margin: 1%;
+  padding: 3px;
+  background-color: var(--page);
+  border-radius: 5px;
+  color: var(--text);
+}
+
+button {
+  margin: 0.5%;
+  padding: 3px;
+  background-color: var(--page);
+  border-radius: 5px;
+  color: var(--text);
+}
+
 .spellDesc {
   color: var(--text);
   padding-inline-end: 15px;
@@ -113,9 +130,9 @@ p {
 .glowConst {
   color: var(--text);
   text-align: left;
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
+  -webkit-animation: glowConst 1s ease-in-out infinite alternate;
+  -moz-animation: glowConst 1s ease-in-out infinite alternate;
+  animation: glowConst 1s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glowConst {

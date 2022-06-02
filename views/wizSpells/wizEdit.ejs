@@ -14,16 +14,35 @@
         <h1 class="glowConst">Edit: <%= spell.name %></h1>
       </nav>
       <form action="/wizSpells/<%=spell._id%>?_method=PUT" method="POST">
-        <input type="text" name="level" value="<%=spell.level%>" placeholder="Spell Level"><br>
-        <input type="text" name="name" value="<%=spell.name%>" placeholder="Spell Name"><br>
-        <input type="text" name="school" value="<%=spell.school%>" placeholder="Spell School"><br>
-        <input type="text" name="range" value="<%=spell.range%>" placeholder="Spell Range"><br>
-        <input type="text" name="duration" value="<%=spell.duration%>" placeholder="Spell Duration"><br>
-        <input type="text" name="aoe" value="<%=spell.aoe%>" placeholder="Area of Effect"><br>
+        <label for="spellLvl">Level</label><br>
+        <input type="text" name="level" value="<%=spell.level%>" placeholder="Spell Level" id="spellLvl"><br>
+
+        <label for="spellName">Spell Name</label><br>
+        <input type="text" name="name" value="<%=spell.name%>" placeholder="Spell Name" id="spellName"><br>
+
+        <label for="school">School</label><br>
+        <input type="text" name="school" value="<%=spell.school%>" placeholder="Spell School" id="school"><br>
+
+        <label for="range">Range</label><br>
+        <input type="text" name="range" value="<%=spell.range%>" placeholder="Spell Range" id="range"><br>
+
+        <label for="duration">Duration</label><br>
+        <input type="text" name="duration" value="<%=spell.duration%>" placeholder="Spell Duration" id="duration"><br>
+
+        <label for="aoe">Area of Effect</label><br>
+        <input type="text" name="aoe" value="<%=spell.aoe%>" placeholder="Area of Effect" id="aoe"><br>
+
+        <label for="components">Components</label><br>
         <input type="text" name="components" value="<%=spell.components%>" placeholder="Casting Components"><br>
-        <input type="text" name="casting" value="<%=spell.casting%>" placeholder="Casting Time"><br>
-        <input type="text" name="saving" value="<%=spell.saving%>" placeholder="Saving Throw"><br>
-        <textarea wrap="hard" name="description" cols="60" rows="20" ><%=spell.description%></textarea><br>
+
+        <label for="casting">Casting Time</label><br>
+        <input type="text" name="casting" value="<%=spell.casting%>" placeholder="Casting Time" id="casting"><br>
+
+        <label for="saving">Saving Throw</label><br>
+        <input type="text" name="saving" value="<%=spell.saving%>" placeholder="Saving Throw" id="saving"><br>
+
+        <label for="spellDesc">Spell Description</label><br>
+        <textarea wrap="hard" name="description" cols="60" rows="20" id="spellDesc"><%=spell.description%></textarea><br>
         <input type="submit" value="Update Spell">
       </form>
     </main>
